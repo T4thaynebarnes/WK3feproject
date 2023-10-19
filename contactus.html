@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+  <!-- below adding script element to connect to bootstrap to get dropdown boxes to work -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+
+
+    <!-- adding nav bar to contact us page -->
+    <nav class=" navbar navbar-expand-sm navbar-dark bg-dark"> 
+        <a class=" navbar-brand" href="index.html">Heathenry Apparel</a>
+        <!-- you add data toggle coding to collapse the navbar of viewed on a phone, 
+          each do a specific thing,  -->
+      <button class="navbar-toggler" 
+         type="button" 
+         data-toggle="collapse" 
+         data-target="#navbarNavDropdown" 
+         aria-controle="navbarNavDropdown" 
+         aria-expanded="false" 
+         aria-label="Toggle navigation">
+         <!--  this below makes the three dots when collapsed -->
+             <span class="navbar-toggler-icon">
+                
+             </span>
+      </button>
+    <!-- outside of button tag now adding elements of the navbar
+      Notice how navbarNavDropdown is an ID targeting the 
+      above code to cause it to collapse -->
+   <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+          <!-- gets targeted by JS later to add function -->
+         <li class="nav-item active">
+         <!-- below add anchors to house links to other content -->
+            <a  class="nav-link" href="index.html">Home</a>
+         </li>
+          
+          <!-- if you want a dropdown link -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  
+              href="#" 
+              id="navbarDropdownMenuLink" 
+              role="button"
+              data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false">
+              Selections
+          </a>
+          <!-- div pertaining to the dropdown box coded above -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <!-- anchoring in item s user can click on -->
+              
+              <a class="dropdown-item" href="merch.html"> T-shirts</a>
+              <a class="dropdown-item" href="index.html">Home</a>
+              
+            
+          </div>
+          </li> 
+      
+         
+          
+
+      </ul>
+      
+
+   </div>   
+
+</nav>
+<main class="p-3 mb-2 bg-white text-dark">
+
+  <div class="container"
+     >
+    <div class="row">
+            <div class="col-lg-8">
+    <form class="p-3 mb-2 bg-info text-white">
+        <!-- bs element form-group, gives it css styling  -->
+        <div class="form-group-">
+            <!-- below label indicates what label user will use for that box -->
+          <label for="InputFname">First name</label>
+          <!-- below is seting up the text inside the text box for first name -->
+          <input type="Firstname" class="form-control" id="InputFname" aria-describedby="Fnamehelp" placeholder="First Name">
+          
+        </div>
+        <div class="form-group">
+          <label for="InputLname">Last Name</label>
+          <!-- below is seting up the text inside the text box for last name -->
+          <input type="lastname" class="form-control" id="InputLname" placeholder="Last name">
+        </div>
+        <div class="form-group">
+            <label for="InputEmail">Email: </label>
+            <!-- below is seting up the text inside the text box for Email address -->
+            <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+
+
+
+        </div>
+        <!-- adding text box to input user's comments -->
+        <div class="form-group">
+          <label for="comments">comments</label>
+          <textarea class="form-control" id="comments" rows="3"></textarea>
+        </div>
+
+      
+        <div class="form-group form-check">
+            <!-- setting up the checkbox to get the newsletter! -->
+          <input type="checkbox" class="form-check-input" id="Check1">
+          <!-- adding label above text box -->
+          <label class="form-check-label" for="Check1">Recieve our newsletter!</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+    <!-- adding thank you for your business -->
+    <div class="col-sm 4">
+      <img class="img-fluid" class src="intropic3.jpg" alt="thank you for your support">
+
+    </div>
+    <!-- adding text below something along the lines of gratitude for thier business lol -->
+    <div class="row-fluid">
+      <div class="col-lg">
+            <p class="p-3 mb-2 bg-white text-dark">Lorem ipsum dolor sit amet. Et enim nemo et Quis repellat sed voluptas fuga. 
+              Rem nihil quidem est praesentium suscipit in quia tempore sed delectus delectus vel 
+              aperiam enim in eaque adipisci. Nam voluptates ullam 33 blanditiis facere et iure 
+              neque. Eum dolores fugiat in rerum velit ut aliquid voluptas hic expedita eius. 
+              Non autem possimus in quia animi rem sapiente sint eos blanditiis facilis eos 
+              autem aliquam At molestias consequuntur ex sequi quos. Nam illum vitae sed 
+              atque quae ea fugiat fugiat et veniam aliquam cum voluptate ullam. Eum sunt 
+              internos ut nulla quasi ea nihil impedit qui maxime quibusdam et placeat adipisci.</p>
+      </div>
+
+    </div>
+    </div>
+
+
+  </div>
+
+</main>
+
+</body>
+</html>
